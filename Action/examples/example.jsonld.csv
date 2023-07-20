@@ -1,0 +1,2 @@
+"id_", "type_", "refProject_", "dateCreated_", "dateModified_", "name_", "executionPeriod_", "compliancePercentage_", "modifications_", "@context__0_"
+"urn:ngsi-ld:0.E.6.AY1.A1", "Action", "O.E.6.AY1", "2016-08-08T10:18:16Z", "2016-08-08T10:18:16Z", "Realizacion de campafias de promoci6n en medios de comunicaci6n de la provincia", "2021S1", "0", "SIN MODIFICACION", "https://smart-data-models.github.io/dataModel.SDG/context.jsonld"
