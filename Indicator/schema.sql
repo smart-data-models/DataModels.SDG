@@ -1,0 +1,3 @@
+/* (Beta) Export of data model Indicator of the subject dataModel.SDG for a postgreSQL database. Pending translation of enumerations and multityped attributes */
+CREATE TYPE Indicator_type AS ENUM ('Indicator');
+CREATE TABLE Indicator (address json, alternateName text, areaServed text, calculationForm text, dataProvider text, dateCreated timestamp, dateModified timestamp, description text, expectedValue text, id text, indicatorType text, location json, modifications text, name text, owner json, refProject json, seeAlso json, source text, type Indicator_type, value text);
