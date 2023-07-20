@@ -1,0 +1,242 @@
+{
+    "@id": "dtmi:com:ngsi-ld:Project;0",
+    "@type": "Interface",
+    "@context": "dtmi:dtdl:context;2",
+    "comment": "Smart Data Models - Project for sustainable development goals adapted to DTDL from smartdatamodels.org. Source: https://raw.githubusercontent.com/smart-data-models/dataModel.SDG/master/Project/schema.json",
+    "description": "Set of activities that, when executed support the compliance of a strategic goal (Provision of Key Services, Management Evolution, Close contact with Territory, Enterprises Boosting, Focused Investment, Social/Cultural/Sports Promotion, etc.). This goal itself is composed of one or more project,s and address one of the strategic axes (Work model, Economic development, Social development, Environmental Development) that give a high level shape to the Strategic Plan",
+    "displayName": "Project",
+    "contents": [
+        {
+            "name": "alternateName",
+            "writable": true,
+            "displayName": "alternateName",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "An alternative name for this item"
+        },
+        {
+            "name": "areaServed",
+            "writable": true,
+            "displayName": "areaServed",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "The geographic area where a service or offered item is provided"
+        },
+        {
+            "name": "axis",
+            "writable": true,
+            "displayName": "axis",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "Property. Strategic axis the project belongs to"
+        },
+        {
+            "name": "challenges",
+            "writable": true,
+            "displayName": "challenges",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "Property. Challenges to be faced by the project "
+        },
+        {
+            "name": "dataProvider",
+            "writable": true,
+            "displayName": "dataProvider",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "A sequence of characters identifying the provider of the harmonised data entity."
+        },
+        {
+            "name": "dateCreated",
+            "writable": true,
+            "displayName": "dateCreated",
+            "@type": "Property",
+            "schema": "dateTime",
+            "comment": "Entity creation timestamp. This will usually be allocated by the storage platform."
+        },
+        {
+            "name": "dateModified",
+            "writable": true,
+            "displayName": "dateModified",
+            "@type": "Property",
+            "schema": "dateTime",
+            "comment": "Timestamp of the last modification of the entity. This will usually be allocated by the storage platform."
+        },
+        {
+            "name": "description",
+            "writable": true,
+            "displayName": "description",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "A description of this item"
+        },
+        {
+            "name": "location",
+            "writable": true,
+            "displayName": "location"
+        },
+        {
+            "name": "modifications",
+            "writable": true,
+            "displayName": "modifications",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "Property. Changes that the project has incorporated in a possible update "
+        },
+        {
+            "name": "name",
+            "writable": true,
+            "displayName": "name",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "The name of this item."
+        },
+        {
+            "name": "observations",
+            "writable": true,
+            "displayName": "observations",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "Property. Free text about specific characteristics of the project"
+        },
+        {
+            "name": "sdg",
+            "writable": true,
+            "displayName": "sdg",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "Property. Sustainable Development goal the project belongs to "
+        },
+        {
+            "name": "seeAlso",
+            "writable": true,
+            "displayName": "seeAlso"
+        },
+        {
+            "name": "source",
+            "writable": true,
+            "displayName": "source",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object."
+        },
+        {
+            "name": "strategicObjective",
+            "writable": true,
+            "displayName": "strategicObjective",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "Property. Strategic objective the project belongs to "
+        },
+        {
+            "@type": "Telemetry",
+            "name": "delegations",
+            "schema": {
+                "@type": "Array",
+                "elementSchema": "string"
+            },
+            "comment": "Property. Delegations or internal departments the project belongs to.",
+            "displayName": "delegations"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "delegationsInvolved",
+            "schema": {
+                "@type": "Array",
+                "elementSchema": "string"
+            },
+            "comment": "Property. Delegations or internal departments involved in the project",
+            "displayName": "delegationsInvolved"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "interestGroups",
+            "schema": {
+                "@type": "Array",
+                "elementSchema": "string"
+            },
+            "comment": "Property. Delegations or internal departments involved in the project",
+            "displayName": "interestGroups"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "owner",
+            "schema": {
+                "@type": "Array",
+                "elementSchema": "string"
+            },
+            "comment": "A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)",
+            "displayName": "owner"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "refDevice",
+            "schema": {
+                "@type": "Array",
+                "elementSchema": "string"
+            },
+            "comment": "Relationship. Device(s) used to obtain the measurement.",
+            "displayName": "refDevice"
+        },
+        {
+            "@type": "object",
+            "name": "address",
+            "comment": "The mailing address",
+            "displayName": "address",
+            "fields": [
+                {
+                    "name": "addressCountry",
+                    "schema": "string"
+                },
+                {
+                    "name": "addressLocality",
+                    "schema": "string"
+                },
+                {
+                    "name": "addressRegion",
+                    "schema": "string"
+                },
+                {
+                    "name": "district",
+                    "schema": "string"
+                },
+                {
+                    "name": "postOfficeBoxNumber",
+                    "schema": "string"
+                },
+                {
+                    "name": "postalCode",
+                    "schema": "string"
+                },
+                {
+                    "name": "streetAddress",
+                    "schema": "string"
+                },
+                {
+                    "name": "streetNr",
+                    "schema": "string"
+                }
+            ]
+        },
+        {
+            "@type": "Telemetry",
+            "name": "plan",
+            "schema": {
+                "@type": "Enum",
+                "valueSchema": "string",
+                "enumValues": [
+                    {
+                        "name": "EDS",
+                        "displayName": "EDS",
+                        "enumValue": 1
+                    },
+                    {
+                        "name": "PPE",
+                        "displayName": "PPE",
+                        "enumValue": 2
+                    }
+                ]
+            }
+        }
+    ]
+}
