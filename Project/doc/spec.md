@@ -7,16 +7,25 @@
 [document generated automatically](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
 <!-- /15-License -->  
 <!-- 20-Description -->  
+Global description: **Set of activities that, when executed support the compliance of a strategic goal (Provision of Key Services, Management Evolution, Close contact with Territory, Enterprises Boosting, Focused Investment, Social/Cultural/Sports Promotion, etc.). This goal itself is composed of one or more project,s and address one of the strategic axes (Work model, Economic development, Social development, Environmental Development) that give a high level shape to the Strategic Plan**  
+version: 0.0.1  
 <!-- /20-Description -->  
 <!-- 30-PropertiesList -->  
 
 ## List of properties  
 
 <sup><sub>[*] If there is not a type in an attribute is because it could have several types or different formats/patterns</sub></sup>  
-<!-- /30-PropertiesList -->  
+- `address[object]`: The mailing address  . Model: [https://schema.org/address](https://schema.org/address)	- `addressCountry[string]`: The country. For example, Spain  . Model: [https://schema.org/addressCountry](https://schema.org/addressCountry)  
+	- `addressLocality[string]`: The locality in which the street address is, and which is in the region  . Model: [https://schema.org/addressLocality](https://schema.org/addressLocality)  
+	- `addressRegion[string]`: The region in which the locality is, and which is in the country  . Model: [https://schema.org/addressRegion](https://schema.org/addressRegion)  
+	- `district[string]`: A district is a type of administrative division that, in some countries, is managed by the local government    
+	- `postOfficeBoxNumber[string]`: The post office box number for PO box addresses. For example, 03578  . Model: [https://schema.org/postOfficeBoxNumber](https://schema.org/postOfficeBoxNumber)  
+	- `postalCode[string]`: The postal code. For example, 24004  . Model: [https://schema.org/https://schema.org/postalCode](https://schema.org/https://schema.org/postalCode)  
+	- `streetAddress[string]`: The street address  . Model: [https://schema.org/streetAddress](https://schema.org/streetAddress)  
+- `alternateName[string]`: An alternative name for this item  - `areaServed[string]`: The geographic area where a service or offered item is provided  . Model: [https://schema.org/Text](https://schema.org/Text)- `axis[string]`: Strategic axis the project belongs to  - `challenges[string]`: Challenges to be faced by the project   - `dataProvider[string]`: A sequence of characters identifying the provider of the harmonised data entity  - `dateCreated[date-time]`: Entity creation timestamp. This will usually be allocated by the storage platform  - `dateModified[date-time]`: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform  - `delegations[array]`: Delegations or internal departments the project belongs to  - `delegationsInvolved[array]`: Delegations or internal departments involved in the project  - `description[string]`: A description of this item  - `id[*]`: Unique identifier of the entity  - `interestGroups[array]`: Delegations or internal departments involved in the project  - `location[*]`: Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon  - `modifications[string]`: Changes that the project has incorporated in a possible update   - `name[string]`: The name of this item  - `observations[string]`: Free text about specific characteristics of the project  - `owner[array]`: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)  - `plan[string]`: Subtype of project. Enum:'EDS, PPE'  - `refDevice[array]`: Device(s) used to obtain the measurement  - `sdg[string]`: Sustainable Development goal the project belongs to   - `seeAlso[*]`: list of uri pointing to additional resources about the item  - `source[string]`: A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object  - `strategicObjective[string]`: Strategic objective the project belongs to   - `type[string]`: It must be equal to Project  <!-- /30-PropertiesList -->  
 <!-- 35-RequiredProperties -->  
 Required properties  
-- No required properties  <!-- /35-RequiredProperties -->  
+- `id`  - `type`  <!-- /35-RequiredProperties -->  
 <!-- 40-RequiredProperties -->  
 <!-- /40-RequiredProperties -->  
 <!-- 50-DataModelHeader -->  
@@ -33,29 +42,51 @@ Project:
       description: The mailing address    
       properties:    
         addressCountry:    
-          description: 'Property. The country. For example, Spain. Model:''https://schema.org/addressCountry'''    
+          description: 'The country. For example, Spain'    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/addressCountry    
+            type: Property    
         addressLocality:    
-          description: 'Property. The locality in which the street address is, and which is in the region. Model:''https://schema.org/addressLocality'''    
+          description: 'The locality in which the street address is, and which is in the region'    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/addressLocality    
+            type: Property    
         addressRegion:    
-          description: 'Property. The region in which the locality is, and which is in the country. Model:''https://schema.org/addressRegion'''    
+          description: 'The region in which the locality is, and which is in the country'    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/addressRegion    
+            type: Property    
         district:    
-          description: 'A district is a type of administrative division that, in some countries, is managed by the local government.'    
+          description: 'A district is a type of administrative division that, in some countries, is managed by the local government'    
           type: string    
+          x-ngsi:    
+            type: Property    
         postOfficeBoxNumber:    
-          description: 'Property. The post office box number for PO box addresses. For example, 03578. Model:''https://schema.org/postOfficeBoxNumber'''    
+          description: 'The post office box number for PO box addresses. For example, 03578'    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/postOfficeBoxNumber    
+            type: Property    
         postalCode:    
-          description: 'Property. The postal code. For example, 24004. Model:''https://schema.org/https://schema.org/postalCode'''    
+          description: 'The postal code. For example, 24004'    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/https://schema.org/postalCode    
+            type: Property    
         streetAddress:    
-          description: 'Property. The street address. Model:''https://schema.org/streetAddress'''    
+          description: The street address    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/streetAddress    
+            type: Property    
         streetNr:    
-          description: Number identifying a specific property on a public street.    
+          description: Number identifying a specific property on a public street    
           type: string    
+          x-ngsi:    
+            type: Property    
       type: object    
       x-ngsi:    
         model: https://schema.org/address    
@@ -72,41 +103,41 @@ Project:
         model: https://schema.org/Text    
         type: Property    
     axis:    
-      description: Property. Strategic axis the project belongs to    
+      description: Strategic axis the project belongs to    
       type: string    
       x-ngsi:    
         type: Property    
     challenges:    
-      description: 'Property. Challenges to be faced by the project '    
+      description: 'Challenges to be faced by the project '    
       type: string    
       x-ngsi:    
         type: Property    
     dataProvider:    
-      description: A sequence of characters identifying the provider of the harmonised data entity.    
+      description: A sequence of characters identifying the provider of the harmonised data entity    
       type: string    
       x-ngsi:    
         type: Property    
     dateCreated:    
-      description: Entity creation timestamp. This will usually be allocated by the storage platform.    
+      description: Entity creation timestamp. This will usually be allocated by the storage platform    
       format: date-time    
       type: string    
       x-ngsi:    
         type: Property    
     dateModified:    
-      description: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.    
+      description: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform    
       format: date-time    
       type: string    
       x-ngsi:    
         type: Property    
     delegations:    
-      description: Property. Delegations or internal departments the project belongs to.    
+      description: Delegations or internal departments the project belongs to    
       items:    
         type: string    
       type: array    
       x-ngsi:    
         type: Property    
     delegationsInvolved:    
-      description: Property. Delegations or internal departments involved in the project    
+      description: Delegations or internal departments involved in the project    
       items:    
         type: string    
       type: array    
@@ -118,20 +149,24 @@ Project:
       x-ngsi:    
         type: Property    
     id:    
-      anyOf: &project_-_properties_-_owner_-_items_-_anyof    
-        - description: Property. Identifier format of any NGSI entity    
+      anyOf:    
+        - description: Identifier format of any NGSI entity    
           maxLength: 256    
           minLength: 1    
           pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$    
           type: string    
-        - description: Property. Identifier format of any NGSI entity    
+          x-ngsi:    
+            type: Property    
+        - description: Identifier format of any NGSI entity    
           format: uri    
           type: string    
+          x-ngsi:    
+            type: Property    
       description: Unique identifier of the entity    
       x-ngsi:    
         type: Property    
     interestGroups:    
-      description: Property. Delegations or internal departments involved in the project    
+      description: Delegations or internal departments involved in the project    
       items:    
         type: string    
       type: array    
@@ -140,7 +175,7 @@ Project:
     location:    
       description: 'Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'    
       oneOf:    
-        - description: GeoProperty. Geojson reference to the item. Point    
+        - description: Geojson reference to the item. Point    
           properties:    
             bbox:    
               items:    
@@ -161,7 +196,9 @@ Project:
             - coordinates    
           title: GeoJSON Point    
           type: object    
-        - description: GeoProperty. Geojson reference to the item. LineString    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. LineString    
           properties:    
             bbox:    
               items:    
@@ -185,7 +222,9 @@ Project:
             - coordinates    
           title: GeoJSON LineString    
           type: object    
-        - description: GeoProperty. Geojson reference to the item. Polygon    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. Polygon    
           properties:    
             bbox:    
               items:    
@@ -211,7 +250,9 @@ Project:
             - coordinates    
           title: GeoJSON Polygon    
           type: object    
-        - description: GeoProperty. Geojson reference to the item. MultiPoint    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. MultiPoint    
           properties:    
             bbox:    
               items:    
@@ -234,7 +275,9 @@ Project:
             - coordinates    
           title: GeoJSON MultiPoint    
           type: object    
-        - description: GeoProperty. Geojson reference to the item. MultiLineString    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. MultiLineString    
           properties:    
             bbox:    
               items:    
@@ -260,7 +303,9 @@ Project:
             - coordinates    
           title: GeoJSON MultiLineString    
           type: object    
-        - description: GeoProperty. Geojson reference to the item. MultiLineString    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. MultiLineString    
           properties:    
             bbox:    
               items:    
@@ -288,33 +333,49 @@ Project:
             - coordinates    
           title: GeoJSON MultiPolygon    
           type: object    
+          x-ngsi:    
+            type: GeoProperty    
       x-ngsi:    
         type: GeoProperty    
     modifications:    
-      description: 'Property. Changes that the project has incorporated in a possible update '    
+      description: 'Changes that the project has incorporated in a possible update '    
       type: string    
       x-ngsi:    
         type: Property    
     name:    
-      description: The name of this item.    
+      description: The name of this item    
       type: string    
       x-ngsi:    
         type: Property    
     observations:    
-      description: Property. Free text about specific characteristics of the project    
+      description: Free text about specific characteristics of the project    
       type: string    
       x-ngsi:    
         type: Property    
     owner:    
       description: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)    
       items:    
-        anyOf: *project_-_properties_-_owner_-_items_-_anyof    
-        description: Property. Unique identifier of the entity    
+        anyOf:    
+          - description: Identifier format of any NGSI entity    
+            maxLength: 256    
+            minLength: 1    
+            pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$    
+            type: string    
+            x-ngsi:    
+              type: Property    
+          - description: Identifier format of any NGSI entity    
+            format: uri    
+            type: string    
+            x-ngsi:    
+              type: Property    
+        description: Unique identifier of the entity    
+        x-ngsi:    
+          type: Property    
       type: array    
       x-ngsi:    
         type: Property    
     plan:    
-      description: 'Property. Subtype of project. Enum:''EDS, PPE'''    
+      description: 'Subtype of project. Enum:''EDS, PPE'''    
       enum:    
         - EDS    
         - PPE    
@@ -322,17 +383,31 @@ Project:
       x-ngsi:    
         type: Property    
     refDevice:    
-      description: Relationship. Device(s) used to obtain the measurement.    
+      description: Device(s) used to obtain the measurement    
       items:    
-        anyOf: *project_-_properties_-_owner_-_items_-_anyof    
-        description: Property. Unique identifier of the entity    
+        anyOf:    
+          - description: Identifier format of any NGSI entity    
+            maxLength: 256    
+            minLength: 1    
+            pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$    
+            type: string    
+            x-ngsi:    
+              type: Property    
+          - description: Identifier format of any NGSI entity    
+            format: uri    
+            type: string    
+            x-ngsi:    
+              type: Property    
+        description: Unique identifier of the entity    
+        x-ngsi:    
+          type: Property    
       minItems: 1    
       type: array    
       uniqueItems: true    
       x-ngsi:    
         type: Relationship    
     sdg:    
-      description: 'Property. Sustainable Development goal the project belongs to '    
+      description: 'Sustainable Development goal the project belongs to '    
       type: string    
       x-ngsi:    
         type: Property    
@@ -349,17 +424,17 @@ Project:
       x-ngsi:    
         type: Property    
     source:    
-      description: 'A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object.'    
+      description: 'A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object'    
       type: string    
       x-ngsi:    
         type: Property    
     strategicObjective:    
-      description: 'Property. Strategic objective the project belongs to '    
+      description: 'Strategic objective the project belongs to '    
       type: string    
       x-ngsi:    
         type: Property    
     type:    
-      description: Property. It must be equal to Project    
+      description: It must be equal to Project    
       enum:    
         - Project    
       type: string    
