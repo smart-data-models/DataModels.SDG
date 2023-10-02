@@ -1,3 +1,3 @@
-/* (Beta) Export of data model Action of the subject dataModel.SDG for a postgreSQL database. Pending translation of enumerations and multityped attributes */
+/* (Beta) Export of data model Action of the subject dataModel.SDG for a PostgreSQL database. Pending translation of enumerations and multityped attributes */
 CREATE TYPE Action_type AS ENUM ('Action');
-CREATE TABLE Action (address json, alternateName text, areaServed text, compliancePercentage text, dataProvider text, dateCreated timestamp, dateModified timestamp, description text, executionPeriod text, id text, location json, modifications text, name text, owner json, refProject json, seeAlso json, source text, type Action_type);
+CREATE TABLE Action (address JSON, alternateName TEXT, areaServed TEXT, compliancePercentage NUMERIC, dataProvider TEXT, dateCreated TIMESTAMP, dateModified TIMESTAMP, description TEXT, executionPeriod TEXT, modifications TEXT, name TEXT, owner JSON, source TEXT, type Action_type);
