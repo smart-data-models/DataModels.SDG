@@ -1,3 +1,3 @@
-/* (Beta) Export of data model Project of the subject dataModel.SDG for a postgreSQL database. Pending translation of enumerations and multityped attributes */
-CREATE TYPE plan_type AS ENUM ('EDS', 'PPE');CREATE TYPE Project_type AS ENUM ('Project');
-CREATE TABLE Project (address json, alternateName text, areaServed text, axis text, challenges text, dataProvider text, dateCreated timestamp, dateModified timestamp, delegations json, delegationsInvolved json, description text, id text, interestGroups json, location json, modifications text, name text, observations text, owner json, plan plan_type, refDevice json, sdg text, seeAlso json, source text, strategicObjective text, type Project_type);
+/* (Beta) Export of data model Project of the subject dataModel.SDG for a PostgreSQL database. Pending translation of enumerations and multityped attributes */
+CREATE TYPE plan_type AS ENUM ('EDS','PPE');CREATE TYPE Project_type AS ENUM ('Project');
+CREATE TABLE Project (address JSON, alternateName TEXT, areaServed TEXT, axis TEXT, challenges TEXT, dataProvider TEXT, dateCreated TIMESTAMP, dateModified TIMESTAMP, delegations JSON, delegationsInvolved JSON, description TEXT, interestGroups JSON, modifications TEXT, name TEXT, observations TEXT, owner JSON, plan plan_type, refDevice JSON, sdg TEXT, source TEXT, strategicObjective TEXT, type Project_type);
