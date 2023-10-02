@@ -22,6 +22,7 @@
 	- `postOfficeBoxNumber[string]`: Le numéro de la boîte postale pour les adresses de boîtes postales. Par exemple, 03578  . Model: [https://schema.org/postOfficeBoxNumber](https://schema.org/postOfficeBoxNumber)  
 	- `postalCode[string]`: Le code postal. Par exemple, 24004  . Model: [https://schema.org/https://schema.org/postalCode](https://schema.org/https://schema.org/postalCode)  
 	- `streetAddress[string]`: L'adresse de la rue  . Model: [https://schema.org/streetAddress](https://schema.org/streetAddress)  
+	- `streetNr[string]`: Numéro identifiant une propriété spécifique sur une voie publique    
 - `alternateName[string]`: Un nom alternatif pour ce poste  - `areaServed[string]`: La zone géographique où un service ou un article est offert  . Model: [https://schema.org/Text](https://schema.org/Text)- `axis[string]`: Axe stratégique dans lequel s'inscrit le projet  - `challenges[string]`: Défis à relever par le projet  - `dataProvider[string]`: Une séquence de caractères identifiant le fournisseur de l'entité de données harmonisées  - `dateCreated[date-time]`: Horodatage de la création de l'entité. Celle-ci est généralement attribuée par la plate-forme de stockage  - `dateModified[date-time]`: Date de la dernière modification de l'entité. Cette date est généralement attribuée par la plate-forme de stockage  - `delegations[array]`: Délégations ou services internes auxquels le projet appartient  - `delegationsInvolved[array]`: Délégations ou services internes impliqués dans le projet  - `description[string]`: Une description de l'article  - `id[*]`: Identifiant unique de l'entité  - `interestGroups[array]`: Délégations ou services internes impliqués dans le projet  - `location[*]`: Référence Geojson à l'élément. Il peut s'agir d'un point, d'une chaîne de ligne, d'un polygone, d'un point multiple, d'une chaîne de ligne multiple ou d'un polygone multiple.  - `modifications[string]`: Changements que le projet a intégrés dans une éventuelle mise à jour  - `name[string]`: Le nom de cet élément  - `observations[string]`: Texte libre sur les caractéristiques spécifiques du projet  - `owner[array]`: Une liste contenant une séquence de caractères encodés JSON référençant les identifiants uniques du ou des propriétaires.  - `plan[string]`: Sous-type de projet. Enum : "EDS, PPE  - `refDevice[array]`: Dispositif(s) utilisé(s) pour obtenir la mesure  - `sdg[string]`: Objectif de développement durable auquel le projet appartient  - `seeAlso[*]`: liste d'uri pointant vers des ressources supplémentaires concernant l'élément  - `source[string]`: Séquence de caractères indiquant la source originale des données de l'entité sous forme d'URL. Il est recommandé d'utiliser le nom de domaine complet du fournisseur de la source ou l'URL de l'objet source.  - `strategicObjective[string]`: Objectif stratégique dans lequel s'inscrit le projet  - `type[string]`: Il doit être égal à Projet  <!-- /30-PropertiesList -->  
 <!-- 35-RequiredProperties -->  
 Propriétés requises  
@@ -458,7 +459,7 @@ Project:
 <!-- 80-Examples -->  
 ## Exemples de charges utiles  
 #### Projet NGSI-v2 valeurs-clés Exemple  
-Voici un exemple de projet au format JSON-LD sous forme de valeurs clés. Ceci est compatible avec NGSI-v2 lorsque l'on utilise `options=keyValues` et renvoie les données contextuelles d'une entité individuelle.  
+Voici un exemple de projet au format JSON-LD sous forme de valeurs-clés. Ceci est compatible avec NGSI-v2 lorsque l'on utilise `options=keyValues` et renvoie les données contextuelles d'une entité individuelle.  
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
@@ -562,7 +563,7 @@ Project:
 ```  
 </details>  
 #### Projet NGSI-LD normalisé Exemple  
-Voici un exemple de projet au format JSON-LD tel qu'il a été normalisé. Ce format est compatible avec le format NGSI-LD lorsqu'il n'utilise pas d'options et renvoie les données contextuelles d'une entité individuelle.  
+Voici un exemple de projet au format JSON-LD normalisé. Ce format est compatible avec le format NGSI-LD lorsqu'il n'utilise pas d'options et renvoie les données contextuelles d'une entité individuelle.  
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
