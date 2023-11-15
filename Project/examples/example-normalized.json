@@ -6,24 +6,24 @@
     "value": "EDS"
   },
   "delegations": {
-    "type": "array",
+    "type": "StructuredValue",
     "value": [
       "TRANSFORMATION DIGITAL Y TURISMO"
     ]
   },
   "delegationsInvolved": {
-    "type": "array",
+    "type": "StructuredValue",
     "value": [
       "BIENESTAR SOCIAL",
       "CONCERTACION Y PARTICIPACION TERRITORIAL"
     ]
   },
   "dateCreated": {
-    "type": "Date-Time",
+    "type": "DateTime",
     "value": "2016-08-08T10:18:16Z"
   },
   "dateModified": {
-    "type": "Date-Time",
+    "type": "DateTime",
     "value": "2016-08-08T10:18:16Z"
   },
   "name": {
@@ -39,7 +39,7 @@
     "value": "B. DESARROLLO ECONOMICO"
   },
   "interestGroups": {
-    "type": "Text",
+    "type": "StructuredValue",
     "value": [
       "AYUNTAMIENTOS"
     ]
