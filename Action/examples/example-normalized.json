@@ -6,11 +6,11 @@
     "value": "O.E.6.AY1"
   },
   "dateCreated": {
-    "type": "Date-Time",
+    "type": "DateTime",
     "value": "2016-08-08T10:18:16Z"
   },
   "dateModified": {
-    "type": "Date-Time",
+    "type": "DateTime",
     "value": "2016-08-08T10:18:16Z"
   },
   "name": {
@@ -22,8 +22,8 @@
     "value": "2021S1"
   },
   "compliancePercentage": {
-    "type": "Number",
-    "value": 0
+    "type": "Boolean",
+    "value": false
   },
   "modifications": {
     "type": "Text",
