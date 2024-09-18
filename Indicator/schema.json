@@ -1,5 +1,5 @@
 {
-  "$schema": "http://json-schema.org/schema#",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$schemaVersion": "0.0.1",
   "$id": "https://smart-data-models.github.io/dataModel.SDG/Indicator/schema.json",
   "title": "Smart Data Models - Indicator for sustainable development goals",
@@ -24,7 +24,7 @@
           ],
           "description": "Property. It must be equal to Action"
         },
-        "refProject":{
+        "refProject": {
           "$ref": "https://raw.githubusercontent.com/smart-data-models/data-models/master/common-schema.json#/definitions/EntityIdentifierType",
           "description": "Relationship. Id of the related project"
         },
@@ -37,11 +37,11 @@
           "description": "Property. Expected value of the indicator"
         },
         "value": {
-            "type": "string",
+          "type": "string",
           "description": "Property. Value of the indicator"
         },
         "calculationForm": {
-            "type": "string",
+          "type": "string",
           "description": "Property. Formula for the calculation  of the indicator"
         },
         "modifications": {
