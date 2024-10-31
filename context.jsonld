@@ -12,14 +12,14 @@
         "axis": "https://smartdatamodels.org/dataModel.SDG/axis",
         "bbox": {
             "@container": "@list",
-            "@id": "geojson:bbox"
+            "@id": "https://purl.org/geojson/vocab#bbox"
         },
         "calculationForm": "https://smartdatamodels.org/dataModel.SDG/calculationForm",
         "challenges": "https://smartdatamodels.org/dataModel.SDG/challenges",
         "compliancePercentage": "https://smartdatamodels.org/dataModel.SDG/compliancePercentage",
         "coordinates": {
             "@container": "@list",
-            "@id": "geojson:coordinates"
+            "@id": "https://purl.org/geojson/vocab#coordinates"
         },
         "dataProvider": "https://smartdatamodels.org/dataProvider",
         "dateCreated": "https://smartdatamodels.org/dateCreated",
@@ -33,7 +33,7 @@
         "id": "@id",
         "indicatorType": "https://smartdatamodels.org/dataModel.SDG/indicatorType",
         "interestGroups": "https://smartdatamodels.org/dataModel.SDG/interestGroups",
-        "location": "ngsi-ld:location",
+        "location": "https://uri.etsi.org/ngsi-ld/location",
         "modifications": "https://smartdatamodels.org/dataModel.SDG/modifications",
         "name": "https://smartdatamodels.org/name",
         "ngsi-ld": "https://uri.etsi.org/ngsi-ld/",
@@ -51,6 +51,6 @@
         "streetAddress": "https://smartdatamodels.org/streetAddress",
         "streetNr": "https://smartdatamodels.org/streetNr",
         "type": "@type",
-        "value": "ngsi-ld:hasValue"
+        "value": "https://uri.etsi.org/ngsi-ld/hasValue"
     }
 }
